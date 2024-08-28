@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje de Amor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00);
+            background-size: 400% 400%;
+            animation: gradientBG 5s ease infinite;
+            overflow: hidden;
+            text-align: center;
+            color: #fff;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 0%; }
+            25% { background-position: 100% 0%; }
+            50% { background-position: 100% 100%; }
+            75% { background-position: 0% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        .content {
+            position: relative;
+            font-size: 2rem;
+            font-style: italic;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 2rem;
+            color: red;
+            animation: moveHearts 10s infinite;
+        }
+
+        @keyframes moveHearts {
+            0% { top: 0; left: 0; }
+            25% { top: 50px; left: 100px; }
+            50% { top: 0; left: 200px; }
+            75% { top: 100px; left: 100px; }
+            100% { top: 0; left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>Eres el amor de mi vida y de todas mis vidas, mi amado Olaf</p>
+        <p class="heart">❤️</p>
+        <p class="heart" style="animation-delay: 2s;">❤️</p>
+        <p class="heart" style="animation-delay: 4s;">❤️</p>
+        <p>Siempre tuya V. Karen</p>
+    </div>
+</body>
+</html>
